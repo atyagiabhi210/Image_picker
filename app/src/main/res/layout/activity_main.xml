@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="LABEL WIZARD"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="300dp"
@@ -17,13 +27,15 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
-        android:visibility="visible"
         android:layout_height="300dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="168dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
@@ -59,6 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/button_live"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
